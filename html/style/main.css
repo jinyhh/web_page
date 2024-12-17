@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import url(./common.css);
+
+/* 슬로건 */
+#slogan { position: relative;
+    height: 700px; margin-top: 100px;
+    background: url(../images/bg.jpg) no-repeat center / cover;
+    display: flex; flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#slogan::before { content: ""; height: 100%; width: 100%;
+            position: absolute;
+            background: #0005;
+}
+#slogan p { font-size: 5rem; 
+        text-transform: uppercase; 
+        color: #fff;
+        line-height: 90px;
+        margin-bottom: 50px;
+        text-shadow: 0 5px 10px #000;
+        position: relative;
+}
+#slogan a { padding: 10px 20px; 
+        border: 1px solid #ffffff; border-radius: 20px 0;
+        color: #ffffff;
+        position: relative;
+}
+
+#slogan a:hover { background: #003cff; }
+
+/* 솔루션 */
+#solution { display: flex; justify-content: center; 
+        background: #ebebeb;       
+}
+#solution .solution { width: 310px; height: 400px; 
+                padding-top: 150px;
+                padding-right: 40px;
+                background: url(../images/bgSolution.png) no-repeat 0 50px;
+}
+#solution .hosting { background-position-x: 70px; }
+#solution .security { background-position-x: -240px; }
+#solution .payment { background-position-x: -570px; }
+#solution h3 { margin-bottom: 15px; }
+
+/* customer center */
+#customerBoard { display: flex; justify-content: center; }
+
+/* 공통 */
+#customerBoard > section { width: 465px; padding: 70px 20px 0;
+                    position: relative;
+}
+#customerBoard > section  > h3 { font-weight: normal; font-size: 1.5rem; 
+                            border-bottom:  1px solid #000;
+                            padding-bottom: 20px;
+}
+#customerBoard .more { position: absolute; top: 70px; right: 20px; 
+                width: 31px; height: 31px;
+                text-indent: 100%; overflow: hidden;
+                white-space: nowrap;
+                transition: 0.3s;
+}
+#customerBoard .more::before {  position: absolute; content: "";
+                            top: 0; left: 15px;
+                            width: 1px; height: 30px;
+                            border-left: 1px solid #000;
+}
+#customerBoard .more::after { position: absolute; content: "";
+                        top: 15px; left: 0;
+                        width: 30px; height: 1px;
+                        border-top: 1px solid #000;
+}
+
+#customerBoard .more:hover { transform: rotate(45deg); }
+
+/* news */
+#news h3 { margin-bottom: 25px;}
+#news h3 span { color: #ff4e18;}
+#news dl { padding: 0 20px;}
+#news dl dt { font-size: 1.2em; font-weight: bold; }
+#news dl dd { margin: 17px 0 35px;}
+
+/* notice */
+#notice ul li { padding: 15px 20px;
+            border-bottom:  1px solid #b8b8b8;
+}
+#notice ul li a { display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            color: #333;
+}
+#notice ul li span { color: #7d7d7d; }
